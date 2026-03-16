@@ -29,7 +29,9 @@ data class ResponseBody(
     @SerializedName("scheduleId")
     val scheduleId: String,
     @SerializedName("templateId")
-    val templateId: String
+    val templateId: String,
+    @SerializedName("modDtm")
+    val modDtm: String = ""
 )
 
 // 업데이트 요청 모델

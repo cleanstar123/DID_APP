@@ -1,133 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
     android:background="#f5f5f5">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DID 클라이언트 설정"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="32dp"
-        android:textColor="#333333" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="서버 URL"
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etServerUrl"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="http://210.219.229.46:8081"
-        android:inputType="textUri"
-        android:background="#ffffff"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"
-        android:textColor="#333333"
-        android:textColorHint="#999999"
-        android:textSize="14sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="레스토랑 코드"
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etRestaurantCode"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="RST001"
-        android:inputType="textCapCharacters"
-        android:background="#ffffff"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"
-        android:textColor="#333333"
-        android:textColorHint="#999999"
-        android:textSize="14sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="디스플레이 ID"
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etDisplayId"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="1"
-        android:inputType="number"
-        android:background="#ffffff"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp"
-        android:textColor="#333333"
-        android:textColorHint="#999999"
-        android:textSize="14sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="새로고침 간격 (초)"
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:layout_marginBottom="8dp" />
-
-    <EditText
-        android:id="@+id/etRefreshInterval"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="60"
-        android:inputType="number"
-        android:background="#ffffff"
-        android:padding="12dp"
-        android:layout_marginBottom="32dp"
-        android:textColor="#333333"
-        android:textColorHint="#999999"
-        android:textSize="14sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:orientation="vertical"
+        android:padding="24dp">
 
-        <Button
-            android:id="@+id/btnCancel"
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DID 클라이언트 설정"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서버 URL"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etServerUrl"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_weight="1"
-            android:text="취소"
-            android:layout_marginEnd="8dp"
-            android:background="#cccccc"
+            android:hint="http://210.219.229.46:8081"
+            android:inputType="textUri"
+            android:background="#ffffff"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
             android:textColor="#333333"
-            android:textSize="16sp" />
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/btnSave"
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="레스토랑 코드"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etRestaurantCode"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_weight="1"
-            android:text="저장"
-            android:layout_marginStart="8dp"
-            android:background="#4CAF50"
-            android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:hint="RST001"
+            android:inputType="textCapCharacters"
+            android:background="#ffffff"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="디스플레이 ID"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etDisplayId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="1"
+            android:inputType="number"
+            android:background="#ffffff"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자동 재시작 시간 (비워두면 비활성화)"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <EditText
+                android:id="@+id/etRestartHour"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="3"
+                android:inputType="number"
+                android:background="#ffffff"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="시"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/etRestartMinute"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="0"
+                android:inputType="number"
+                android:background="#ffffff"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="분"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="취소"
+                android:layout_marginEnd="8dp"
+                android:background="#cccccc"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="저장"
+                android:layout_marginStart="8dp"
+                android:background="#4CAF50"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
