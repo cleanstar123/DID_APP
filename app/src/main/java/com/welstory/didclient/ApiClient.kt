@@ -34,9 +34,9 @@ class ApiClient(
     /**
      * 스케줄 조회 API 호출
      */
-    fun getSchedule(currentScheduleId: String, callback: ScheduleCallback) {
+    fun getSchedule(currentScheduleId: String, currentModDtm: String = "", callback: ScheduleCallback) {
         try {
-            val request = ScheduleRequest(scheduleId = currentScheduleId)
+            val request = ScheduleRequest(scheduleId = currentScheduleId, modDtm = currentModDtm)
             val json = gson.toJson(request)
             val requestBody = json.toRequestBody(mediaType)
             

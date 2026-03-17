@@ -27,7 +27,7 @@ class SettingsActivity : AppCompatActivity() {
         const val KEY_RESTART_HOUR = "restart_hour"
         const val KEY_RESTART_MINUTE = "restart_minute"
 
-        const val DEFAULT_SERVER_URL = "http://210.219.229.46:8081"
+        const val DEFAULT_SERVER_URL = "http://210.219.229.46:8082"
         const val DEFAULT_RESTAURANT_CODE = "RST001"
         const val DEFAULT_DISPLAY_ID = "1"
         const val DEFAULT_RESTART_HOUR = 3

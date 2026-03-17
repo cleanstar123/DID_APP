@@ -129,7 +129,7 @@ class MainActivity : AppCompatActivity() {
         AppLogger.d(TAG, "API로 스케줄 조회 시작")
         try {
             val requestScheduleId = if (currentScheduleId.isEmpty()) "" else currentScheduleId
-            apiClient.getSchedule(requestScheduleId, object : ApiClient.ScheduleCallback {
+            apiClient.getSchedule(requestScheduleId, currentModDtm, object : ApiClient.ScheduleCallback {
                 override fun onSuccess(response: ScheduleResponse) {
                     try {
                         handler.post {

@@ -5,7 +5,9 @@ import com.google.gson.annotations.SerializedName
 // API 요청 모델
 data class ScheduleRequest(
     @SerializedName("scheduleId")
-    val scheduleId: String
+    val scheduleId: String,
+    @SerializedName("modDtm")
+    val modDtm: String = ""
 )
 
 // API 응답 모델
